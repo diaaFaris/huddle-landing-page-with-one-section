@@ -79,18 +79,13 @@ main .container {
     justify-content: center;
 }
 
-main img {
-    width: 65%;
-    max-width: 100%;
-}
-
 main .text {
     display: flex;
     flex-direction: column;
 }
 
 main .text .content h1 {
-    font-size: 45px;
+    font-size: 35px;
 }
 
 main .text .content p {
@@ -124,14 +119,14 @@ main .text .content button:hover {
     color: white;
 }
 
-main .text .social-icons {
+footer .container {
     display: flex;
     justify-content: flex-end;
     gap: 15px;
-    margin-top: 100px;
+    padding: 30px;
 }
 
-main .text .social-icons i {
+footer i {
     font-size: 20px;
     padding: 10px;
     border: 1px solid white;
@@ -148,7 +143,7 @@ main .text .social-icons i {
     -o-transition: var(--transition-speed);
 }
 
-main .text .social-icons i:hover {
+footer i:hover {
     color: var(--soft-magenta);
     border-color: var(--soft-magenta);
 }
@@ -184,7 +179,7 @@ main .text .social-icons i:hover {
         font-size: 16px;
     }
 
-    main .text .social-icons {
+    footer .container {
         justify-content: center;
         margin: 50px auto;
     }
