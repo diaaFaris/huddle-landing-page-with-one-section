@@ -1,0 +1,193 @@
+/* Start Variables */
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --transition-speed: 0.3s;
+}
+
+/* End Variables */
+
+/* Start General Styles */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url("images/bg-desktop.svg");
+    background-size: cover;
+    background-color: var(--violet);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+/* End General Styles */
+
+/* Start Header */
+
+header {
+    padding: 30px 0;
+}
+
+/* End Header */
+
+/* Start Main */
+
+main .container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+main img {
+    width: 65%;
+    max-width: 100%;
+}
+
+main .text {
+    display: flex;
+    flex-direction: column;
+}
+
+main .text .content h1 {
+    font-size: 45px;
+}
+
+main .text .content p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+main .text .content button {
+    font-size: 20px;
+    color: var(--violet);
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 4px 3px 15px rgb(0 0 0 / 40%);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: var(--transition-speed);
+    -webkit-transition: var(--transition-speed);
+    -moz-transition: var(--transition-speed);
+    -ms-transition: var(--transition-speed);
+    -o-transition: var(--transition-speed);
+    outline: none;
+}
+
+main .text .content button:hover {
+    background: var(--soft-magenta);
+    color: white;
+}
+
+main .text .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+main .text .social-icons i {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition-speed);
+    -webkit-transition: var(--transition-speed);
+    -moz-transition: var(--transition-speed);
+    -ms-transition: var(--transition-speed);
+    -o-transition: var(--transition-speed);
+}
+
+main .text .social-icons i:hover {
+    color: var(--soft-magenta);
+    border-color: var(--soft-magenta);
+}
+
+@media (max-width: 992px) {
+    body {
+        background-image: url("images/bg-mobile.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    header .logo {
+        width: 150px;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+
+    main .container img {
+        width: 100%;
+    }
+
+    main .container .text {
+        text-align: center;
+    }
+
+    main .container .text .content h1 {
+        font-size: 25px;
+    }
+
+    main .container .text .content p {
+        font-size: 16px;
+    }
+
+    main .text .social-icons {
+        justify-content: center;
+        margin: 50px auto;
+    }
+}
+
+/* End Main */
